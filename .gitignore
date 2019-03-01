@@ -17,6 +17,3 @@
 .byebug_history
 public/uploads/*
 config/secrets.yml
-
-
-secret_key_base: 2f10039e2a8742b4576899a9ebc713e05e07d397fb6d733cfe49d5884701d1bbe383e3b6de76f8193215af1e390981c9207243e497a52a8afbe10e0891d19874
