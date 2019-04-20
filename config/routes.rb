@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: 'registrations', omniauth_callbacks: 'users/omniauth_callbacks' }
   devise_scope :user  do
-    post 'registration' => 'devise/registrations#create', as: :create_registration
     get 'users/registrations/done' => 'registrations#done' #本当はresources :usersにネストしたい
   end
 
@@ -25,6 +24,7 @@ Rails.application.routes.draw do
     end
     collection do
       get 'search'
+      get 'search_detail'
     end
   end
   resources :categories, only: [:index,:show]
